@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #2f353d;
+}
+
+.container {
+    position: relative;
+    background-color: #2f353d;
+    height: 90vh;
+    width: 90%;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: 12px solid #3c434b;
+    box-shadow: 0px 0px 70px rgb(62, 191, 191);
+    padding: 20px;
+    text-align: center;
+}
+
+.text {
+    padding-top: 10px;
+    color: rgb(62, 191, 191);
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    font-weight: 100;
+}
+
+.addtask {
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addtask input {
+    font-size: 1.2rem;
+    margin-left: 12px;
+    width: calc(100% - 60px);
+    border: none;
+    outline: none;
+}
+
+.addtask button {
+    font-size: 1.2rem;
+    height: 37px;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(62, 191, 191);
+    margin-right: 1px;
+}
+
+.todaysTask {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.todaysTask ul {
+    padding: 5px;
+    background-color: white;
+    height: 40px;
+    width: 48%;
+    text-align: start;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todaysTask ul i {
+    background-color: rgb(62, 191, 191);
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text {
+        font-size: 2.5rem;
+    }
+    
+    .addtask input {
+        font-size: 1rem;
+    }
+
+    .addtask button {
+        font-size: 1rem;
+        width: 50px;
+    }
+    
+    .todaysTask ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        height: 80vh;
+    }
+    
+    .text {
+        font-size: 2rem;
+    }
+    
+    .addtask {
+        height: 35px;
+    }
+
+    .addtask input {
+        font-size: 0.9rem;
+        width: calc(100% - 45px);
+    }
+
+    .addtask button {
+        font-size: 0.9rem;
+        width: 45px;
+    }
+    
+    .todaysTask ul {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
